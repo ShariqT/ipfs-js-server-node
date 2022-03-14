@@ -1,0 +1,25 @@
+# IPFS Javascript Relay Node
+This is an example of an IPFS Relay Node. The code in this repo is used for the talk "Building a Decentrazlied Twitter with IPFS". 
+
+## Installion/Usage
+You will need to have Node installed. To run the server, type `node server.js` in the terminal. 
+
+### Cloud Installation
+
+**Login to Heroku**
+$ heroku login
+**Login to the Container Registry**
+$ heroku container:login
+**Clone the repo**
+$ git clone https://github.com/ShariqT/ipfs-js-server-node.git
+$ cd ipfs-js-server-node
+**Create a Heroku app**
+$ heroku create
+**Build and push the image**
+$ heroku container:push web
+**Release the image to your app**
+$ heroku container:release web
+# Scale to one free worker
+$ heroku ps:scale web=1
+**Open the app in the browser**
+$ heroku open

@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "ipfs": "^0.62.1"
+    "ipfs": "^0.62.1",
+    "express": "^4.17.3"
   }
 }
